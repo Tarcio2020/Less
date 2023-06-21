@@ -1,11 +1,14 @@
 @import "variaveis.less";
 
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
+
 img {
-    border-radius: 50px;
+    border-radius: 1000px;
 }
 
 body {
-    background-color: @cordeFundo;
+    background-color: @corDeFundo;
     color: @cordDosTextos;
 }
 
@@ -14,5 +17,12 @@ body {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-    
+
+    @media @breakpointMobile {
+        background-color: black;
+
+        
+    }
+
 }
+
