@@ -17,12 +17,18 @@ body {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
-
+    
+    @media @breakpointTablet {
+        max-width: 80%;
+        background-color: yellow;    
+    }
+    
     @media @breakpointMobile {
+        max-width: 70%;
         background-color: black;
 
-        
     }
+
 
 }
 
