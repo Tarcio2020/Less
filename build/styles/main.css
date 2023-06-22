@@ -1,5 +1,8 @@
-img {
-  border-radius: 1000px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   background-color: #0a3d62;
@@ -21,4 +24,25 @@ body {
     max-width: 70%;
     background-color: black;
   }
+}
+header {
+  padding: 24px;
+}
+header .avatar {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px;
+}
+.avatar-bio {
+  text-align: center;
+}
+.avatar-bio-name {
+  font-size: 16px;
+}
+.avatar-bio-sub-title {
+  font-size: 14px;
+}
+.avatar-bio-bio-description {
+  font-size: 12px;
+  opacity: 0.7;
 }
