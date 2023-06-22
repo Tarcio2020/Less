@@ -3,6 +3,11 @@
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
 
+//mixins______________________________
+.margin-Botton8 {
+    margin-bottom: 10px;
+}
+
 
 * {
     margin: 0;
@@ -46,6 +51,8 @@ header {
         display: block;
         margin: 0 auto;
         border-radius: 100px;
+        width: 96px;
+        height: 96px;
     }
 }
 
@@ -55,10 +62,12 @@ header {
 
     &-name {
         font-size: 16px;
+        .margin-Botton8()
     }
 
     &-sub-title {
         font-size: 14px;
+        .margin-Botton8()
     }
 
     &-bio-description {
@@ -67,3 +76,23 @@ header {
     }
 }
 
+.social-links {
+    
+    display: flex;
+    justify-content: space-between;
+    max-width: 360px;
+    width: 100%;
+    margin: 0 auto;
+
+    li {
+        list-style: none;
+
+        img {
+            &:hover {
+                transform: scale(1.1);
+
+            }
+        }
+    }
+
+}

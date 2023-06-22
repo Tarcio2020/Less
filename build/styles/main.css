@@ -1,3 +1,6 @@
+.margin-Botton8 {
+  margin-bottom: 10px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -32,17 +35,34 @@ header .avatar {
   display: block;
   margin: 0 auto;
   border-radius: 100px;
+  width: 96px;
+  height: 96px;
 }
 .avatar-bio {
   text-align: center;
 }
 .avatar-bio-name {
   font-size: 16px;
+  margin-bottom: 10px;
 }
 .avatar-bio-sub-title {
   font-size: 14px;
+  margin-bottom: 10px;
 }
 .avatar-bio-bio-description {
   font-size: 12px;
   opacity: 0.7;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 360px;
+  width: 100%;
+  margin: 0 auto;
+}
+.social-links li {
+  list-style: none;
+}
+.social-links li img:hover {
+  transform: scale(1.1);
 }
