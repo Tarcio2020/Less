@@ -1,4 +1,4 @@
-Vamos começar instalando o pacote LESS
+Vamos começar instalando o pacote LESS <br>
 
     npm install -g less
 
@@ -6,16 +6,16 @@ Agora iniciatemos o less com
 
     npm init
 
-*Teremos algumas perguntas, daremos enter em todas.
+*Teremos algumas perguntas, daremos enter em todas. <br>
 
-Vamos instalar a dependencia do projeto.
+Vamos instalar a dependencia do projeto. <br>
 
     npm install --save-dev less
 
-*Criou se as pastas package e node_modules
-*Criaremos a pasta .gitignore
-*Criaremos a pasta src>styles
-*Criaremos dentro da pasta styles o arquivo main.less
+*Criou se as pastas package e node_modules <br>
+*Criaremos a pasta .gitignore <br>
+*Criaremos a pasta src>styles <br>
+*Criaremos dentro da pasta styles o arquivo main.less <br>
 
 Iremos em package.json
 em:
