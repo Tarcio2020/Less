@@ -1,4 +1,4 @@
-@import "variaveis.less";
+@import "mapa.less";
 
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
@@ -16,11 +16,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
-
 body {
-    background-color: @corDeFundo;
-    color: @cordDosTextos;
+    background-color: #colors[backgroundColor]; 
+    color: #colors[tColor];
 }
+
 
 
 .container {
@@ -28,14 +28,20 @@ body {
     width: 100%;
     margin: 0 auto;
     //A ordem é importante...efeito cascata do maior para o menor
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
     @media @breakpointTablet {
         max-width: 80%;
-        background-color: yellow;    
+    
     }
     
     @media @breakpointMobile {
         max-width: 70%;
-        background-color: black;
+    
 
     }
 
@@ -44,8 +50,13 @@ body {
 
 
 
+
+li {
+    list-style: none;
+}
+
 header {
-    padding: 24px;
+    padding-bottom: 24px;
 
     .avatar {
         display: block;
@@ -88,11 +99,38 @@ header {
         list-style: none;
 
         img {
+            transition: all ease .3s;
             &:hover {
+                //scala de 110%
                 transform: scale(1.1);
-
             }
         }
     }
 
+}
+
+
+.projects-list {
+    margin-top: 32px;
+
+    &-item {
+        a {
+            text-decoration: none;
+            background-color: #colors[bColor];
+            display: block;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            text-align: center;
+            color: #colors[tColor];
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #colors[bColor];
+            transition: all ease .5s;
+
+            &:hover {
+                color: #colors[buttonColor];
+                background-color: transparent;
+            }
+        }
+    }
 }
