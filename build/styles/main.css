@@ -1,5 +1,5 @@
-.margin-Botton8 {
-  margin-bottom: 10px;
+.marginBottom8 {
+  margin-bottom: 8px;
 }
 * {
   margin: 0;
@@ -8,8 +8,10 @@
   font-family: 'Roboto', sans-serif;
 }
 body {
-  background-color: #0a3d62;
-  color: #ffd;
+  color: #f5f6fa;
+}
+li {
+  list-style: none;
 }
 .container {
   max-width: 960px;
@@ -20,77 +22,68 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    max-width: 80%;
-  }
-}
 @media (max-width: 767px) {
   .container {
     max-width: 70%;
   }
 }
-li {
-  list-style: none;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
 }
 header {
   padding-bottom: 24px;
 }
 header .avatar {
   display: block;
-  margin: 0 auto;
-  border-radius: 100px;
-  width: 96px;
-  height: 96px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
 }
 .avatar-bio {
   text-align: center;
+  margin-bottom: 25px;
 }
 .avatar-bio-name {
   font-size: 16px;
-  margin-bottom: 10px;
 }
-.avatar-bio-sub-title {
+.avatar-bio-subtitle {
   font-size: 14px;
-  margin-bottom: 10px;
 }
-.avatar-bio-bio-description {
-  font-size: 12px;
+.avatar-bio-description {
+  font-size: 14px;
   opacity: 0.7;
 }
 .social-links {
   display: flex;
   justify-content: space-between;
-  max-width: 360px;
+  max-width: 240px;
   width: 100%;
   margin: 0 auto;
-}
-.social-links li {
-  list-style: none;
 }
 .social-links li img {
   transition: all ease 0.3s;
 }
 .social-links li img:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 .projects-list {
   margin-top: 32px;
 }
 .projects-list-item a {
   text-decoration: none;
-  background-color: #78e08f;
+  background-color: #751b4d;
   display: block;
   padding: 16px 20px;
   margin-bottom: 16px;
   text-align: center;
-  color: #ffd;
+  color: #f5f6fa;
   font-weight: bold;
   border-radius: 30px;
-  border: 2px solid #78e08f;
+  border: 2px solid #751b4d;
   transition: all ease 0.5s;
 }
 .projects-list-item a:hover {
-  color: #78e08f;
+  color: #751b4d;
   background-color: transparent;
 }
