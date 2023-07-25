@@ -14,6 +14,7 @@ li {
   list-style: none;
 }
 .container {
+  padding-top: 50px;
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
@@ -42,12 +43,12 @@ header .avatar {
 }
 .avatar-bio {
   text-align: center;
-  margin-bottom: 25px;
 }
 .avatar-bio-name {
   font-size: 16px;
 }
 .avatar-bio-subtitle {
+  margin-top: 20px;
   font-size: 14px;
 }
 .avatar-bio-description {
@@ -95,4 +96,15 @@ header .avatar {
 .projects-list-item a:hover {
   color: #751b4d;
   background-color: transparent;
+}
+footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 60px;
+  border-top: solid 1px #751b4d;
+}
+.ftext {
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
 }
