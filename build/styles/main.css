@@ -13,6 +13,14 @@ body {
 li {
   list-style: none;
 }
+.textHeader {
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  bord: solid #751b4d;
+  padding: 20px;
+}
 .container {
   padding-top: 50px;
   max-width: 960px;
