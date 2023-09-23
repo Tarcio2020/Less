@@ -34,7 +34,7 @@ li {
     justify-content: center;
     width: 100%;
     height: 70px;
-    bord: solid #colors[buttonColor];
+    border-bottom: solid #colors[buttonColor];
     padding: 20px;
 }
 
@@ -42,6 +42,26 @@ li {
 .container {
     padding-top: 50px;
     max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @media @breakpointMobile {
+        max-width: 70%;
+    }
+
+    @media @breakpointTablet {
+        max-width: 80%;
+    }
+}
+
+
+.container2 {
+    padding-top: 50px;
+    max-width: 500px;
     width: 100%;
     margin: 0 auto;
     height: 100%px;
