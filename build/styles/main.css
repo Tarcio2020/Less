@@ -66,10 +66,10 @@ li {
     max-width: 80%;
   }
 }
-header {
+section {
   padding-bottom: 24px;
 }
-header .avatar {
+section .avatar {
   display: block;
   margin: 0 auto 24px;
   border-radius: 50%;
@@ -115,7 +115,6 @@ header .avatar {
 }
 .projects-list-item a {
   text-decoration: none;
-  background-color: #942c65;
   display: block;
   padding: 16px 20px;
   margin-bottom: 16px;
